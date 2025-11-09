@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Último dia dos Namorados</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/arquivos.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <!-- <img src="src/imagens/logo-c3b2a518-cf67-40a1-9730-a711cda4c62e.jpg" alt="Logo do Site" /> -->
+    </header>
+    <main class="container">
+      <h1 class="titulo">Viva momentos que fortalecem seu relacionamento.</h1>
+      <h4 class="filtros">Neste espaço feito especialmente para casais, vocês podem solicitar experiências, serviços personalizados e gestos únicos que se alinham com as 5 linguagens do amor.</h4>
+      <h4 class="filtros">Seja um momento a dois, uma surpresa especial ou um cuidado diário — aqui o amor é vivido com intenção, criatividade e carinho.</h4>
+      <h4 class="filtros">Porque amar é demonstrar, e cada gesto conta. ❤️</h4>
+
+      <div class="filtros">
+        <div class="momento-servico">
+          <label for="categoria"> Categoria </label>
+          <select id="categoria" class="categoria">
+            <option value="">Selecione uma Categoria</option>
+            <option value="Momento">Momento</option>
+            <option value="Servico">Serviço</option>
+          </select>
+        </div>
+        <!--<div class="preco-cartas">
+          <label for="preco">Preço máximo (R$)</label>
+          <input type="text" id="preco" class="preco" placeholder="Ex: 100" />
+        </div>-->
+
+        <div class="botoes-filtros">
+          <button class="btn-filtrar">Aplicar filtros</button>
+          <button class="btn-limpar">Limpar Filtros</button>
+        </div>
+      </div>
+
+      <ul class="cartas">
+        <li class="carta" data-categoria="Servico" data-preco="3000">
+          <img src="src/imagens/Jantar.jpg" alt="Imagem de um Jantar" />
+          <div class="informacoes">
+            <h2 class="nome-momento">Jantar</h2>
+            <span class="categoria"><h3>Categoria:</h3> Serviço</span>
+            <span class="categoria"><h3>Garantia:</h3> Feito com carinho, servido com amor e temperado com dedicação.</span>
+            <a
+              href="https://wa.me/5547996240072?text=%F0%9F%94%94%20ALERTA%20DE%20SOLICITA%C3%87%C3%83O%20%F0%9F%94%94%0A%0AVoc%C3%AA%20est%C3%A1%20prestes%20a%20ativar%20um%20servi%C3%A7o%205%20estrelas%20no%20Clube%20do%20Amor%20da%20Minha%20Vida%21%20%F0%9F%92%96%0A%0A%F0%9F%91%A9%E2%80%8D%F0%9F%8C%B3%20Solicito%20com%20todo%20meu%20charme%20um%20JANTAR%20ROM%C3%82NTICO%20preparado%20pelo%20meu%20chef%20favorito%20%28com%20amor%20no%20tempero%20e%20nos%20olhos%29%20%F0%9F%8D%B7%F0%9F%8D%9D%F0%9F%95%AF%EF%B8%8F%0A%0A%F0%9F%98%8D%20Sei%20que%20ser%C3%A1%20inesquec%C3%ADvel%2C%20porque%20tudo%20feito%20por%20voc%C3%AA%20%C3%A9%20especial...%0A%0A%F0%9F%93%85%20Reserva%20para%3A%20A%20mulher%20mais%20amada%20do%20universo."
+              class="btn-solicitar"
+              target="_blank"
+            >
+              Solicitar
+            </a>
+          </div>
+        </li>
+        <li class="carta" data-categoria="Momento" data-preco="3000">
+          <img
+            src="src/imagens/cinema em casa.jpeg"
+            alt="Imagem de um casal assistindo filme em casa"
+          />
+          <div class="informacoes">
+            <h2 class="nome-momento">Cineminha (Em casa)</h2>
+            <span class="categoria"><h3>Categoria:</h3> Momento</span>
+            <span class="categoria"><h3>Garantia:</h3> Filme, pipoca e carinho garantidos no nosso cantinho especial.</span>
+            <a
+              href="https://wa.me/5547996240072?text=%F0%9F%8E%AC%20ALERTA%20DE%20CENINHA%20CASEIRA%20%F0%9F%8E%AC%0A%0AAtivando%20o%20combo%3A%20sof%C3%A1%2C%20cobertor%2C%20besteirinhas%20e%20o%20melhor%20filme%20ao%20lado%20do%20melhor%20amor%21%20%F0%9F%8D%AB%F0%9F%8D%BF%F0%9F%9B%8B%EF%B8%8F%0A%0A%E2%9D%A4%EF%B8%8F%20Hoje%20%C3%A9%20dia%20de%20CINEMINHA%20EM%20CASA%2C%20com%20direito%20a%20sess%C3%A3o%20VIP%20na%20companhia%20mais%20linda%20do%20mundo%21%0A%0A%F0%9F%93%85%20T%C3%B4%20prontinha%20pro%20play%20e%20pros%20abra%C3%A7os."
+              class="btn-solicitar"
+              target="_blank"
+            >
+              Solicitar
+            </a>
+          </div>
+        </li>
+        <li class="carta" data-categoria="Servico" data-preco="3000">
+          <img src="src/imagens/Hamburgues.jpeg" alt="Imagem do Hamburguer" />
+          <div class="informacoes">
+            <h2 class="nome-momento">Noite do Hamburguer</h2>
+            <span class="categoria"><h3>Categoria:</h3> Serviço</span>
+            <span class="categoria"><h3>Garantia:</h3> Hambúrguer artesanal com sabor de cuidado e pitadas de mimo.</span>
+            <a
+              href="https://wa.me/5547996240072?text=%F0%9F%8D%94%20ALERTA%20DE%20DEL%C3%8DCIA%20%F0%9F%8D%94%0A%0AAtivando%20a%20t%C3%A3o%20sonhada%20NOITE%20DO%20HAMB%C3%9ARGUER%21%20%F0%9F%A4%A4%E2%9D%A4%EF%B8%8F%0A%0A%F0%9F%91%A9%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%91%A8%20Quero%20um%20combo%20completo%20feito%20com%20muito%20amor%2C%20batata%20e%20aquele%20molho%20secreto%20do%20meu%20moz%C3%A3o%21%0A%0A%F0%9F%8E%89%20Que%20seja%20uma%20noite%20gostosa%2C%20divertida%20e%20cheia%20de%20sabor%20%28e%20beijos%29%21%0A%0A%F0%9F%93%85%20Pedido%20oficial%20feito%20pela%3A%20sua%20cliente%20VIP%20do%20cora%C3%A7%C3%A3o%21"
+              class="btn-solicitar"
+              target="_blank"
+            >
+              Solicitar
+            </a>
+          </div>
+        </li>
+        <li class="carta" data-categoria="Momento" data-preco="3000">
+          <img src="src/imagens/cinema.jpeg" alt="Imagem de um Cinema" />
+          <div class="informacoes">
+            <h2 class="nome-momento">Cineminha (Shopping)</h2>
+            <span class="categoria"><h3>Categoria:</h3> Momento</span>
+            <span class="categoria"><h3>Garantia:</h3> Rolê, risadas e filme com direito a mão dada e lanche.</span>
+            <a
+              href="https://wa.me/5547996240072?text=%F0%9F%8D%BF%20ALERTA%20DE%20ROLEZINHO%20%F0%9F%8D%BF%0A%0AAtivando%20o%20ingresso%20dourado%20para%20o%20CINEMINHA%20COM%20ROL%C3%8A%20NO%20SHOPPING%21%20%F0%9F%8E%9F%EF%B8%8F%F0%9F%9B%8D%EF%B8%8F%0A%0A%F0%9F%91%A9%E2%9D%A4%EF%B8%8F%E2%80%8D%F0%9F%91%A8%20Sess%C3%A3o%20escolhida%2C%20pipoca%20garantida%20e%20a%20melhor%20companhia%20da%20gal%C3%A1xia%20confirmada%21%0A%0A%F0%9F%8E%AC%20Que%20esse%20passeio%20seja%20leve%2C%20divertido%20e%20cheio%20de%20amor%21%0A%0A%F0%9F%93%85%20Embarque%20imediato%20com%20destino%3A%20nosso%20cantinho%20no%20cinema."
+              class="btn-solicitar"
+              target="_blank"
+            >
+              Solicitar
+            </a>
+          </div>
+        </li>
+        <li class="carta" data-categoria="Servico" data-preco="3000">
+          <img
+            src="src/imagens/massagem.jpeg"
+            alt="Imagem de uma pessoa recebendo massagem"
+          />
+          <div class="informacoes">
+            <h2 class="nome-momento">Vale Massagem</h2>
+            <span class="categoria"><h3>Categoria:</h3> Serviço</span>
+            <span class="categoria"><h3>Garantia:</h3> Toques suaves para aliviar tensões e espalhar afeto puro.</span>
+            <a
+              href="https://wa.me/5547996240072?text=%F0%9F%92%86%20ALERTA%20DE%20RELAXAMENTO%20%F0%9F%92%86%0A%0AHoje%20quero%20desligar%20do%20mundo%20e%20me%20conectar%20com%20o%20para%C3%ADso%20das%20m%C3%A3os%20m%C3%A1gicas%20do%20meu%20amor%21%20%E2%9C%A8%0A%0A%F0%9F%99%8C%20Solicito%20oficialmente%20uma%20MASSAGEM%20RELAXANTE%20cheia%20de%20carinho%2C%20cuidado%20e%20cafun%C3%A9.%0A%0A%F0%9F%A7%98%E2%80%8D%E2%99%80%EF%B8%8F%20Porque%20eu%20mere%C3%A7o...%20e%20porque%20ningu%C3%A9m%20faz%20isso%20melhor%20que%20voc%C3%AA%21%0A%0A%F0%9F%93%85%20Confirma%20essa%20experi%C3%AAncia%20sensorial%2C%20moz%C3%A3o%3F"
+              class="btn-solicitar"
+              target="_blank"
+            >
+              Solicitar
+            </a>
+          </div>
+        </li>
+        <li class="carta" data-categoria="Momento" data-preco="3000">
+          <img
+            src="src/imagens/piquinique.jpeg"
+            alt="Imagem de um piquenique"
+          />
+          <div class="informacoes">
+            <h2 class="nome-momento">Piquenique</h2>
+            <span class="categoria"><h3>Categoria:</h3> Momento</span>
+            <span class="categoria"><h3>Garantia:</h3> Momentos leves, comidinhas gostosas e natureza ao redor.</span>
+            <a
+              href="https://wa.me/5547996240072?text=%F0%9F%A7%BA%20ALERTA%20DE%20MOMENTO%20FOFO%20%F0%9F%A7%BA%0A%0AHoje%20o%20clima%20t%C3%A1%20perfeito%20para%20um%20PIQUENIQUE%20cheio%20de%20amor%2C%20risadas%20e%20comidinhas%21%20%F0%9F%8C%A4%EF%B8%8F%F0%9F%8D%87%F0%9F%8D%9E%0A%0A%F0%9F%8C%B8%20Quero%20grama%2C%20toalhinha%20xadrez%2C%20natureza%20e%20voc%C3%AA%20do%20meu%20ladinho%21%0A%0A%F0%9F%93%B8%20Pronta%20pra%20eternizar%20esse%20momento%20m%C3%A1gico%20ao%20ar%20livre...%0A%0A%F0%9F%93%85%20Convite%20oficial%20feito%20pela%20sua%20rom%C3%A2ntica%20favorita%21"
+              class="btn-solicitar"
+              target="_blank"
+            >
+              Solicitar
+            </a>
+          </div>
+        </li>
+        <li class="carta" data-categoria="Servico" data-preco="3000">
+          <img
+            src="src/imagens/café da manhã.jpeg"
+            alt="Imagem do café da manhã"
+          />
+          <div class="informacoes">
+            <h2 class="nome-momento">Café da manhã especial</h2>
+            <span class="categoria"><h3>Categoria:</h3> Serviço</span>
+            <span class="categoria"><h3>Garantia:</h3> Delícias matinais preparadas com afeto e cheirinho de amor.</span>
+            <a
+              href="https://wa.me/5547996240072?text=%E2%98%95%20ALERTA%20DE%20AMOR%20MATINAL%20%E2%98%80%EF%B8%8F%0A%0AQuero%20come%C3%A7ar%20meu%20dia%20com%20o%20melhor%20sabor%20do%20mundo%3A%20o%20CAF%C3%89%20DA%20MANH%C3%83%20preparado%20pelo%20meu%20amor%21%20%F0%9F%A5%90%F0%9F%8D%93%F0%9F%8D%AF%0A%0A%F0%9F%91%A9%E2%80%8D%F0%9F%8C%B3%20Com%20direito%20a%20mimos%2C%20quitutes%20e%20aquele%20sorriso%20que%20ilumina%20meu%20dia...%0A%0A%F0%9F%92%96%20Sei%20que%20ser%C3%A1%20o%20caf%C3%A9%20mais%20gostoso%20e%20mais%20cheio%20de%20amor%20do%20planeta%21%0A%0A%F0%9F%93%85%20Pedido%20entregue%20com%20fome%20e%20saudade."
+              class="btn-solicitar"
+              target="_blank"
+            >
+              Solicitar
+            </a>
+          </div>
+        </li>
+        <li class="carta" data-categoria="Momento" data-preco="3000">
+          <img
+            src="src/imagens/nascer do sol.jpeg"
+            alt="Imagem de um casal assistindo o Nascer do Sol."
+            class="img"
+          />
+          <div class="informacoes">
+            <h2 class="nome-momento">Assistir o Nascer do Sol</h2>
+            <span class="categoria"><h3>Categoria:</h3> Momento</span>
+            <span class="categoria"><h3>Garantia:</h3> Visual incrível, silêncio mágico e coração quentinho.</span>
+            <a
+              href="https://wa.me/5547996240072?text=%F0%9F%8C%85%20ALERTA%20DE%20EMO%C3%87%C3%83O%20%F0%9F%8C%85%0A%0AQuero%20ativar%20o%20momento%20mais%20po%C3%A9tico%20e%20inspirador%3A%20ver%20o%20NASCER%20DO%20SOL%20com%20voc%C3%AA%21%20%E2%9C%A8%E2%98%80%EF%B8%8F%0A%0A%E2%8F%B0%20Acordar%20cedinho%20s%C3%B3%20vale%20a%20pena%20se%20for%20pra%20ver%20o%20mundo%20acordar%20do%20seu%20lado.%0A%0A%F0%9F%92%9B%20Um%20caf%C3%A9%2C%20uma%20coberta%20e%20nosso%20sil%C3%AAncio%20compartilhado...%20perfeito%21%0A%0A%F0%9F%93%85%20Solicita%C3%A7%C3%A3o%20feita%20por%20quem%20te%20ama%20do%20nascer%20ao%20p%C3%B4r%20do%20sol."
+              class="btn-solicitar"
+              target="_blank"
+            >
+              Solicitar
+            </a>
+          </div>
+        </li>
+        <li class="carta" data-categoria="Momento" data-preco="3000">
+          <img
+            src="src/imagens/noite de jogos.jpeg"
+            alt="Imagem de um casal jogando tabuleiro."
+            class="img"
+          />
+          <div class="informacoes">
+            <h2 class="nome-momento">Noite de jogos</h2>
+            <span class="categoria"><h3>Categoria:</h3> Momento</span>
+            <span class="categoria"><h3>Garantia:</h3> Diversão garantida, risadas soltas e amor em cada jogada.</span>
+            <a
+              href="https://wa.me/5547996240072?text=%F0%9F%8E%B2%20ALERTA%20DE%20COMPETI%C3%87%C3%83O%20ROM%C3%82NTICA%20%F0%9F%8E%B2%0A%0AHoje%20eu%20declaro%20oficialmente%20aberta%20a%20NOITE%20DE%20JOGOS%20com%20meu%20player%202%20favorito%21%20%F0%9F%8E%AE%E2%9D%A4%EF%B8%8F%0A%0A%F0%9F%A7%A9%20Cartas%2C%20tabuleiro%2C%20dados%2C%20controle...%20o%20que%20importa%20%C3%A9%20a%20zoeira%20e%20os%20sorrisos.%0A%0A%F0%9F%8F%86%20Pronta%20pra%20ganhar%20%28ou%20deixar%20voc%C3%AA%20ganhar%2C%20talvez%20%F0%9F%98%8F%29%21%0A%0A%F0%9F%93%85%20Que%20comece%20a%20batalha%20mais%20divertida%20do%20nosso%20amor%21"
+              class="btn-solicitar"
+              target="_blank"
+            >
+              Solicitar
+            </a>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <footer class="rodape">@2025 - Todos os direitos reservados.</footer>
+    <script src="src/js/index.js"></script>
+  </body>
+</html>

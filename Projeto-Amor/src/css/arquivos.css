@@ -1,0 +1,205 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url("../imagens/fundo-romantico.jpg"); /* substitua por uma imagem suave, como corações ou luzes */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #F3E9F1;
+}
+
+.cabecalho {
+  background-image: url('../imagens/Transforme\ amor\ em\ Ação.png'); /* caminho da imagem */
+  /* background-size: cover; faz a imagem preencher todo o espaço */
+  background-position: center; /* centraliza a imagem */
+  background-repeat: no-repeat; /* evita repetição da imagem */
+  background-color: #5D3E6B;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* centraliza o conteúdo verticalmente */
+  margin-bottom: 60px;
+  height: 300px; /* defina uma altura conforme o design desejado */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  max-width: 1880px;
+  margin: 0 auto;
+}
+
+.container .titulo {
+  color: #5D3E6B;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 32px;
+  line-height: 36px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.container .filtros {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+  gap: 15px;
+  align-items: flex-start;
+  color: #2F2A33;
+}
+
+.container .momento-servico,
+.container .ordenar-cartas,
+.container .preco-cartas {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.container label {
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #5D3E6B;
+}
+
+.container select,
+.container input {
+  padding: 16px 13px;
+  border-radius: 10px;
+  border: 2px solid #BCAFC9;
+  background-color: #ef96bc;
+  color: #ef96bc;
+  height: 52px;
+}
+
+.container select:focus,
+.container input:focus {
+  outline: none;
+  border-color: #BCAFC9;
+}
+
+.container select.categoria,
+.container select.ordenar {
+  appearance: none;
+  background: url(../imagens/seta-para-baixo.png) 97% center no-repeat;
+  background-color: #5D3E6B;
+}
+
+.container .botoes-filtros {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.container .botoes-filtros .btn-filtrar,
+.container .botoes-filtros .btn-limpar {
+  border: 2px solid #2F2A33;
+  background-color: #5D3E6B;
+  color: #ef96bc;
+  padding: 16px 32px;
+  font-weight: 600;
+  width: 180px;
+  height: 62px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.container .botoes-filtros .btn-filtrar:hover,
+.container .botoes-filtros .btn-limpar:hover {
+  background-color: #c7006f;
+}
+
+.cartas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.container .cartas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.container .cartas .carta {
+  max-width: 300px;
+  background-color: #E7D9E9;
+  color: #4b0033;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(255, 105, 180, 0.3);
+  overflow: hidden;
+}
+
+.container .carta img {
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
+  width: 300px;          /* Faz a imagem ocupar toda a largura do card */
+  height: 300px;        /* Altura fixa para todas as imagens */
+  object-fit: cover;    /* Corta a imagem para preencher o espaço sem distorcer */
+  border-radius: 10px;
+}
+
+.container .carta .informacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.container .carta .informacoes .nome-momento, .container .carta .informacoes .nome-servico {
+  font-size: 24px;
+  font-weight: 700;
+  color: #5D3E6B;
+}
+
+.container .carta .informacoes .categoria {
+  color: #b95d7d;
+  font-weight: 600;
+}
+
+.container .carta .informacoes .preco {
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #ff4f81;
+}
+
+.container .carta .informacoes .btn-solicitar {
+  color: #ef96bc;
+  background-color: #5D3E6B;
+  padding: 16px;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  transition: 0.3s;
+  text-align: center;
+  text-decoration: none;
+}
+
+.container .carta .informacoes .btn-solicitar:hover {
+  background-color: #c7006f;
+}
+
+.rodape {
+  background-color: #5D3E6B;
+  display: flex;
+  justify-content: center;
+  color: #ef96bc;
+  padding: 20px;
+  margin-top: 60px;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.esconder {
+  display: none;
+}
+
+.mostrar {
+  display: block;
+}
